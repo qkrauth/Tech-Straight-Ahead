@@ -1,0 +1,28 @@
+import React from "react";
+import { FaDiscord } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
+const Footer = () => {
+    return (
+        <footer>
+            <div className="main-foot">
+                <p>Thank you for visiting our site!</p>
+                <div className="footer-icons">
+                    <FaDiscord style={{ color: 'black' }} />
+                    <FaFacebook style={{ color: 'black' }} />
+                    <FaInstagram style={{ color: 'black' }} />
+                    <FaTiktok style={{ color: 'black' }} />
+                    <FaTwitter style={{ color: 'black' }} />
+                    <FaYoutube style={{ color: 'black' }} />
+                </div>
+                <p>Tech Straight Ahead 2023. All Rights Reserved.</p>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;
