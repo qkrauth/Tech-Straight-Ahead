@@ -12,12 +12,12 @@ const Footer = () => {
             <div className="main-foot">
                 <p>Thank you for visiting our site!</p>
                 <div className="footer-icons">
-                    <FaDiscord style={{ color: 'black' }} />
-                    <FaFacebook style={{ color: 'black' }} />
-                    <FaInstagram style={{ color: 'black' }} />
+                    <FaDiscord style={{ color: 'midnightblue' }} />
+                    <FaFacebook style={{ color: 'royalblue' }} />
+                    <FaInstagram style={{ color: 'hotpink' }} />
                     <FaTiktok style={{ color: 'black' }} />
-                    <FaTwitter style={{ color: 'black' }} />
-                    <FaYoutube style={{ color: 'black' }} />
+                    <FaTwitter style={{ color: 'deepskyblue' }} />
+                    <FaYoutube style={{ color: 'darkred' }} />
                 </div>
                 <p>Tech Straight Ahead 2023. All Rights Reserved.</p>
             </div>
