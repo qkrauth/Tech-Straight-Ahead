@@ -1,9 +1,11 @@
+.homescreen-container {
+    min-height: 1000px;
+}
+
 footer {
-    position: fixed;
     bottom: 0px;
     background-color: bisque;
     height: 200px;
-    width: 100vw;
 }
 
 .main-foot {
