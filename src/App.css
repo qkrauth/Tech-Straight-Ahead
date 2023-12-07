@@ -1,10 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.header {
+    background-color: rgb(5, 85, 5);
+}
+
+.header img {
+    height: 75px;
+} 
+
 .homescreen-container {
-    min-height: 1000px;
+    min-height: 5000px;
+}
+
+.home-section-1 {
+    height: 800px;
+    background-image: linear-gradient(rgb(5, 85, 5), rgb(130, 180, 20));
 }
 
 footer {
     bottom: 0px;
-    background-color: bisque;
+    background-color: black;
     height: 200px;
 }
 
@@ -21,9 +43,29 @@ footer {
     font-size: 20px;
 }
 
+.main-foot p {
+    color: white;
+}
+
 .footer-icons {
     width: 300px;
     font-size: 25px;
     display: flex;
     justify-content: space-evenly;
 }
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #333;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #555;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+  }

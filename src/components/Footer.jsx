@@ -12,10 +12,10 @@ const Footer = () => {
             <div className="main-foot">
                 <p>Thank you for visiting our site!</p>
                 <div className="footer-icons">
-                    <FaDiscord style={{ color: 'midnightblue' }} />
+                    <FaDiscord style={{ color: 'slateblue' }} />
                     <FaFacebook style={{ color: 'royalblue' }} />
                     <FaInstagram style={{ color: 'hotpink' }} />
-                    <FaTiktok style={{ color: 'black' }} />
+                    <FaTiktok style={{ color: 'white' }} />
                     <FaTwitter style={{ color: 'deepskyblue' }} />
                     <FaYoutube style={{ color: 'darkred' }} />
                 </div>
