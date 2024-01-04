@@ -19,7 +19,7 @@ const Footer = () => {
                     <FaTwitter style={{ color: 'deepskyblue' }} />
                     <FaYoutube style={{ color: 'darkred' }} />
                 </div>
-                <p>Tech Straight Ahead 2023. All Rights Reserved.</p>
+                <p>DevTrail Guidance 2023. All Rights Reserved.</p>
             </div>
         </footer>
     );
