@@ -3,7 +3,10 @@ import React from "react";
 const Header = () => {
     return (
         <div className="header">
-            <p>current header</p>
+            <p>Logo</p>
+            <div className="nav-bar">
+                Account
+            </div>
         </div>
     );
 };
