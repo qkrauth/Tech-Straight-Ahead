@@ -67,23 +67,55 @@ button:hover {
 
 .home-section-1 img {
     height: 250px;
-    animation-name: move;
-    animation-duration: 2s;
+}
+
+.img1 {
+    animation-name: move1;
+    animation-duration: 5s;
     animation-delay: 0ms;
     animation-iteration-count: infinite;
 }
 
-@keyframes move {
+@keyframes move1 {
     0% {
-        transform: translateY(0);
+        transform: translate(0, 0);
     }
 
-    50% {
-        transform: translateY(-50px);
+    33% {
+        transform: translate(50px, -75px);
+    }
+
+    66% {
+        transform: translate(-50px, -75px);
     }
 
     100% {
-        transform: translateY(0);
+        transform: translate(0, 0);
+    }
+}
+
+.img2 {
+    animation-name: move2;
+    animation-duration: 5s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    33% {
+        transform: translate(-50px, -75px);
+    }
+
+    66% {
+        transform: translate(50px, -75px);
+    }
+
+    100% {
+        transform: translate(0, 0);
     }
 }
 
