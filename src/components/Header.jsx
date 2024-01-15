@@ -5,7 +5,11 @@ const Header = () => {
         <div className="header">
             <p>Logo</p>
             <div className="nav-bar">
-                Account
+                <p>ChatBot</p>
+                <p>Resources</p>
+                <p>Services</p>
+                <p>Products</p>
+                <p>Account</p>
             </div>
         </div>
     );
