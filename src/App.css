@@ -40,9 +40,9 @@ button:hover {
 }
 
 .home-section-1 {
-    height: 700px;
+    height: 800px;
     width: 100%;
-    padding-left: 20px;
+    padding-left: 3%;
     display: flex;
     align-items: center;
     border: 3px solid white;
@@ -140,11 +140,19 @@ button:hover {
 .intro-container h1 {
     color: white;
     font-size: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .intro-container h2 {
     font-size: 30px;
     color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .intro-container span {
@@ -152,7 +160,10 @@ button:hover {
 }
 
 .intro-para {
-    width: 650px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .intro-para h6 {
