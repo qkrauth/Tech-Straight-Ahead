@@ -34,6 +34,11 @@ button:hover {
     justify-content: space-evenly;
 }
 
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
 .homescreen-container {
     min-height: 5000px;
     width: 100%;
