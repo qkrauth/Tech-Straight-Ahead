@@ -2,7 +2,9 @@ import React from "react";
 
 const AuthScreen = () => {
     return (
-        <p>AUTHSCREEN</p>
+        <div className="auth-container">
+            <p>authscreen</p>
+        </div>
     );
 };
 

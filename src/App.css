@@ -7,6 +7,12 @@
     font-family: 'Poppins';
 }
 
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -187,13 +193,14 @@ button:hover {
     color: lightseagreen;
 }
 
-footer {
-    bottom: 0px;
-    background-color: black;
-    height: 200px;
+.auth-container {
+    height: 75vh;
 }
 
 .main-foot {
+    background-color: black;
+    position: relative;
+    bottom: 0;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -204,9 +211,6 @@ footer {
 
 .main-foot p {
     font-size: 20px;
-}
-
-.main-foot p {
     color: white;
 }
 
