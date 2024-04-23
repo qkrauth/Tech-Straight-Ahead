@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const Login = () => {
 
@@ -17,9 +18,14 @@ const Login = () => {
     };
 
     // Function to handle form submission
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form submitted:", formData);
+        try {
+            const response = await axios.post("/auth/login", formData);
+            console.log(response.data);
+        } catch (error) {
+            console.error(error);
+        }
     };
 
     return (

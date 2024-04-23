@@ -4,11 +4,15 @@
 
 const express = require("express");
 const cors = require("cors");
+const Sequelize = require("sequelize");
+const db = require("./util/database");
+const User = require("./models/User");
 
 require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
 
 const authRoutes = require("./auth/authRoutes");
 
@@ -18,4 +22,17 @@ app.use(cors());
 
 app.use("/auth", authRoutes);
 
-app.listen(PORT, () => console.log(`server running on port ${PORT}`));
+// app.listen(PORT, () => console.log(`server running on port ${PORT}`));
+// db.sync();
+
+db.sync({force: true})
+  .then(() => {
+    console.log('Database synchronized');
+    // Start the server after synchronization
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  })
+  .catch(err => {
+    console.error('Database synchronization failed:', err);
+  });
+
+module.exports = app;
