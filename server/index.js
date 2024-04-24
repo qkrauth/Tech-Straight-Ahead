@@ -25,14 +25,28 @@ app.use("/auth", authRoutes);
 // app.listen(PORT, () => console.log(`server running on port ${PORT}`));
 // db.sync();
 
-db.sync({force: true})
+// db.sync({force: true})
+//   .then(() => {
+//     console.log('Database synchronized');
+//     // Start the server after synchronization
+//     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+//   })
+//   .catch(err => {
+//     console.error('Database synchronization failed:', err);
+//   });
+
+// Option 1: Sync without dropping existing tables
+
+db.sync()
   .then(() => {
     console.log('Database synchronized');
-    // Start the server after synchronization
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
   })
   .catch(err => {
     console.error('Database synchronization failed:', err);
   });
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 module.exports = app;

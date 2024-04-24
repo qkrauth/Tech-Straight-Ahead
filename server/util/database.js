@@ -14,4 +14,13 @@ const db = new Sequelize(DATABASE_URL, {
   }
 });
 
+// Test the database connection
+db.authenticate()
+  .then(() => {
+    console.log('Connection to the database has been established successfully.');
+  })
+  .catch((error) => {
+    console.error('Unable to connect to the database:', error);
+  });
+
 module.exports = db;
