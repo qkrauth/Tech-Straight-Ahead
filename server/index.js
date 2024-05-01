@@ -6,6 +6,7 @@ const express = require("express");
 const cors = require("cors");
 const Sequelize = require("sequelize");
 const db = require("./util/database");
+const seedDatabase = require("./util/seed")
 const User = require("./models/User");
 
 require('dotenv').config();
@@ -37,16 +38,26 @@ app.use("/auth", authRoutes);
 
 // Option 1: Sync without dropping existing tables
 
+// db.sync()
+//   .then(() => {
+//     console.log('Database synchronized');
+//   })
+//   .catch(err => {
+//     console.error('Database synchronization failed:', err);
+//   });
+
+// app.listen(PORT, () => {
+//   console.log(`Server running on port ${PORT}`);
+// });
+
 db.sync()
   .then(() => {
     console.log('Database synchronized');
+    seedDatabase();
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
   })
   .catch(err => {
     console.error('Database synchronization failed:', err);
   });
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
 
 module.exports = app;
