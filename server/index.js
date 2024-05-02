@@ -5,8 +5,6 @@
 const express = require("express");
 const cors = require("cors");
 const Sequelize = require("sequelize");
-const db = require("./util/database");
-const seedDatabase = require("./util/seed")
 const User = require("./models/User");
 
 require('dotenv').config();
@@ -23,7 +21,7 @@ app.use(cors());
 
 app.use("/auth", authRoutes);
 
-// app.listen(PORT, () => console.log(`server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`server running on port ${PORT}`));
 // db.sync();
 
 // db.sync({force: true})
@@ -50,14 +48,14 @@ app.use("/auth", authRoutes);
 //   console.log(`Server running on port ${PORT}`);
 // });
 
-db.sync()
-  .then(() => {
-    console.log('Database synchronized');
-    seedDatabase();
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-  })
-  .catch(err => {
-    console.error('Database synchronization failed:', err);
-  });
+// db.sync()
+//   .then(() => {
+//     console.log('Database synchronized');
+//     seedDatabase();
+//     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+//   })
+//   .catch(err => {
+//     console.error('Database synchronization failed:', err);
+//   });
 
 module.exports = app;
